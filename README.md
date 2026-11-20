@@ -27,4 +27,3 @@ Open `http://localhost:3000`.
 - The enquiry form displays a local confirmation and does not send or store submissions.
 - Course names, durations, prices, contact details, and institute copy follow the supplied visual reference and should be reviewed before launch.
 - No API, authentication, payment, advisory, or market-data integration is included.
-
