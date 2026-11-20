@@ -3,8 +3,21 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Market Mantra WealthOrbit | Learn the Market. Build Your Future.",
+  title: {
+    default: "Market Mantra WealthOrbit | Learn the Market. Build Your Future.",
+    template: "%s | Market Mantra WealthOrbit",
+  },
   description: "Practical stock market education, structured learning, and mentorship for your investing journey.",
+  applicationName: "Market Mantra WealthOrbit",
+  openGraph: {
+    title: "Market Mantra WealthOrbit",
+    description: "Practical stock market education, structured learning, and mentorship for your investing journey.",
+    type: "website",
+    locale: "en_IN",
+  },
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
