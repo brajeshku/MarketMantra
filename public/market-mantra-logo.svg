@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="408" height="85" viewBox="0 0 408 85" fill="none">
+  <defs>
+    <linearGradient id="mark-blue" x1="11" y1="67" x2="88" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#087EB8"/>
+      <stop offset=".48" stop-color="#34C5F4"/>
+      <stop offset="1" stop-color="#8DE5FF"/>
+    </linearGradient>
+    <linearGradient id="mark-silver" x1="70" y1="70" x2="91" y2="31" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6CB8D6"/>
+      <stop offset="1" stop-color="#E8F7FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M5 70 27 34 39 52 58 22 70 40 87 8" stroke="url(#mark-blue)" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="m76 10 14-6-4 15" stroke="#55D3FF" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M59 70V56h9v14M72 70V44h9v26M85 70V31h9v39" fill="url(#mark-silver)"/>
+  <text x="111" y="31" fill="#F5FAFF" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" letter-spacing="1.1">MARKET MANTRA</text>
+  <path d="M112 49h34M362 49h38" stroke="#25B8E9" stroke-width="1.5"/>
+  <text x="255" y="54" fill="#D8EAF4" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="4.1" text-anchor="middle">WEALTHORBIT</text>
+  <text x="112" y="77" fill="#4FC9F7" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" letter-spacing=".05">Stock Market Education &amp; Training Institute</text>
+</svg>

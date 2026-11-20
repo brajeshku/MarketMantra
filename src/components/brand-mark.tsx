@@ -6,10 +6,11 @@ export function BrandMark({ compact = false }: { compact?: boolean }) {
     <a className={cn("brand", compact && "brand--compact")} href="#home" aria-label="Market Mantra WealthOrbit home">
       <Image
         className="brand__image"
-        src="/market-mantra-logo.png"
+        src="/market-mantra-logo.svg"
         alt=""
         width={408}
         height={85}
+        unoptimized
         preload={!compact}
       />
     </a>

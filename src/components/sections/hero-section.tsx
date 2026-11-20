@@ -1,32 +1,38 @@
 import {
   ArrowRight,
-  ArrowUpRight,
   Award,
   BookOpenCheck,
   LineChart,
-  ShieldCheck,
   UsersRound,
 } from "@/components/icons";
-import { MarketIllustration } from "@/components/market-illustration";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
     <section className="hero" id="home">
-      <div className="hero__backdrop" />
+      <div className="hero-media" aria-hidden="true">
+        <Image
+          className="hero__photo"
+          src="/market-mantra-hero-final.jpg"
+          alt=""
+          fill
+          priority
+          sizes="(max-width: 860px) 100vw, 65vw"
+        />
+      </div>
       <div className="hero-inner page-shell">
         <div className="hero-copy">
-          <span className="hero-kicker">
-            <i /> STOCK MARKET EDUCATION &amp; TRAINING INSTITUTE
-          </span>
+          <span className="hero-kicker">STOCK MARKET EDUCATION &amp; TRAINING INSTITUTE</span>
           <h1>
-            Learn the market.
+            Learn Stock Market
             <br />
-            <span>Build your future.</span>
+            <span>Build Your Financial Future</span>
           </h1>
           <p className="hero-lead">
-            Build practical market knowledge with expert guidance, structured
-            learning and real-world context—at your pace.
+            Market Mantra WealthOrbit Pvt. Ltd. is a premier stock market
+            education and training institute, empowering individuals with
+            practical knowledge, expert guidance and real-time market insights.
           </p>
           <div className="hero-pillars">
             <div>
@@ -34,9 +40,9 @@ export function HeroSection() {
                 <BookOpenCheck size={19} />
               </span>
               <b>
-                Expert-led
+                Expert
                 <br />
-                learning
+                Faculty
               </b>
             </div>
             <div>
@@ -46,7 +52,7 @@ export function HeroSection() {
               <b>
                 Practical
                 <br />
-                training
+                Training
               </b>
             </div>
             <div>
@@ -54,9 +60,9 @@ export function HeroSection() {
                 <UsersRound size={19} />
               </span>
               <b>
-                Personal
+                Lifetime
                 <br />
-                mentorship
+                Mentorship
               </b>
             </div>
             <div>
@@ -64,37 +70,23 @@ export function HeroSection() {
                 <Award size={19} />
               </span>
               <b>
-                Career-ready
+                Recognized
                 <br />
-                skills
+                Certification
               </b>
             </div>
           </div>
           <div className="hero-actions">
             <Button asChild size="lg">
               <a href="#courses">
-                Explore our courses <ArrowRight size={17} />
+                Explore Our Courses <ArrowRight size={17} />
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="#enquire">Admission enquiry</a>
+              <a href="#enquire">Admission Now</a>
             </Button>
           </div>
-          <div className="hero-assurance">
-            <ShieldCheck size={15} /> Education first. Risk awareness always.
-          </div>
         </div>
-        <div className="hero-art-wrap">
-          <MarketIllustration />
-        </div>
-      </div>
-      <div className="hero-bottomline page-shell">
-        <span>LEARN</span>
-        <span className="line" />
-        <span>ANALYZE</span>
-        <span className="line" />
-        <span>GROW</span>
-        <ArrowUpRight size={17} />
       </div>
     </section>
   );

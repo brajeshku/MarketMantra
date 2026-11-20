@@ -13,7 +13,7 @@ a front-end prototype built from the supplied visual reference.
 ## Project layout
 
 ~~~text
-public/                  Static assets, including the supplied brand logo
+public/                  Supplied logo, course/classroom photos, and trading-floor hero
 src/
   app/
     globals.css          Global styles, design tokens, and responsive rules

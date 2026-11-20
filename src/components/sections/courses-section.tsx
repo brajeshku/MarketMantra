@@ -22,7 +22,7 @@ export function CoursesSection() {
             fundamentals to advanced concepts.
           </SectionHeading>
           <a className="text-link" href="#enquire">
-            Find your course <ArrowRight size={15} />
+            View All Courses <ArrowRight size={15} />
           </a>
         </div>
 

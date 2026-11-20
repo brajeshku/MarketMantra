@@ -1,44 +1,32 @@
-import { ArrowRight, Clock3, Sparkles } from "@/components/icons";
+import { ArrowRight, Clock3 } from "@/components/icons";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import type { Course } from "@/data/site-content";
 
+const courseImages: Record<string, string> = {
+  "01": "/course-fundamentals.jpg",
+  "02": "/course-complete-guide.jpg",
+  "03": "/course-advanced-markets.jpg",
+};
+
 function CourseArtwork({ course }: { course: Course }) {
   return (
-    <div
-      className={"course-art course-art--" + course.theme}
-      aria-hidden="true"
-    >
-      <div className="course-art__glow" />
-      <div className="course-art__tag">MARKET MANTRA · LEARNING SERIES</div>
-      <div className="course-art__chart-label">
-        <span>Market movement</span>
-        <b>+08.42%</b>
-      </div>
-      <div className="course-art__bars">
-        {[31, 47, 40, 62, 51, 72, 59, 81, 68, 94, 76, 105].map(
-          (height, index) => (
-            <span
-              key={height}
-              style={{ height }}
-              className={index % 4 === 2 ? "is-muted" : undefined}
-            />
-          ),
-        )}
-      </div>
-      <svg
-        className="course-art__trend"
-        viewBox="0 0 300 100"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M0 82 C24 75 29 61 49 68 S81 58 98 49 S130 57 149 43 S184 38 201 48 S234 22 254 29 S281 15 300 12"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="3"
+    <div className="course-art" aria-hidden="true">
+      <div className="course-art__photo">
+        <Image
+          src={courseImages[course.number]}
+          alt=""
+          fill
+          sizes="(max-width: 580px) 42vw, (max-width: 860px) 38vw, 14vw"
         />
-      </svg>
-      <div className="course-art__watermark">
-        {course.theme === "gold" ? "₹" : "↗"}
+      </div>
+      <div className="course-art__info">
+        <span className="course-art__tag">COURSE {Number(course.number)}</span>
+        <h3>{course.title}</h3>
+        <div className="course-art__meta">
+          <span><Clock3 size={13} /> {course.duration}</span>
+          <b>{course.price}</b>
+        </div>
       </div>
     </div>
   );
@@ -49,20 +37,6 @@ export function CourseCard({ course }: { course: Course }) {
     <article className="course-card">
       <CourseArtwork course={course} />
       <div className="course-card__body">
-        <div className="course-card__eyebrow">
-          <span>COURSE {course.number}</span>
-          <span className="course-rating">
-            <Sparkles size={12} /> Practical
-          </span>
-        </div>
-        <h3>{course.title}</h3>
-        <p className="course-card__subtitle">{course.subtitle}</p>
-        <div className="course-meta">
-          <span>
-            <Clock3 size={15} /> {course.duration}
-          </span>
-          <b>{course.price}</b>
-        </div>
         <div className="course-modules">
           <b>What you’ll explore</b>
           <ul>

@@ -8,6 +8,7 @@ import {
   UsersRound,
 } from "@/components/icons";
 import { SectionHeading } from "@/components/section-heading";
+import Image from "next/image";
 
 export function ApproachSection() {
   return (
@@ -76,31 +77,13 @@ export function ApproachSection() {
 
         <div className="practice-panel">
           <div className="practice-panel__image">
-            <div className="practice-screen">
-              <span className="practice-screen__dots">
-                <i />
-                <i />
-                <i />
-              </span>
-              <div className="practice-screen__chart">
-                {[25, 40, 31, 51, 44, 68, 57, 76, 64, 95, 83].map(
-                  (height, index) => (
-                    <span
-                      key={height + "-" + index}
-                      style={{ height }}
-                    />
-                  ),
-                )}
-              </div>
-              <svg viewBox="0 0 280 95" preserveAspectRatio="none">
-                <path
-                  d="M0 74 C30 67 29 59 51 65 S83 49 101 52 S135 26 158 42 S184 34 202 38 S231 21 249 26 S268 14 280 10"
-                  fill="none"
-                  stroke="#57d9fc"
-                  strokeWidth="2.5"
-                />
-              </svg>
-            </div>
+            <Image
+              src="/marketmantra-practice-laptop.jpg"
+              alt="Laptop displaying market charts during a practical learning session"
+              fill
+              sizes="(max-width: 860px) 100vw, 50vw"
+            />
+            <span className="practice-panel__scrim" />
             <span className="practice-panel__badge">
               <Play size={15} fill="currentColor" /> Learn by doing
             </span>

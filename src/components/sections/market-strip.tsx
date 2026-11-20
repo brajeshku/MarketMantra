@@ -1,11 +1,11 @@
-import { ArrowUpRight, ChartCandlestick } from "@/components/icons";
+import { BarChart3, ChartCandlestick } from "@/components/icons";
 import { marketIndices } from "@/data/site-content";
 
 export function MarketStrip() {
   return (
     <section
       className="market-strip"
-      aria-label="Illustrative market index values"
+      aria-label="Illustrative sample market index values"
     >
       <div className="market-strip__inner page-shell">
         {marketIndices.map((index) => (
@@ -18,15 +18,14 @@ export function MarketStrip() {
               <strong>{index.value}</strong>
             </span>
             <span className="index-change">
-              <ArrowUpRight size={14} />
               {index.change}
             </span>
           </div>
         ))}
         <div className="market-strip__note">
-          <span className="pulse-dot" />
+          <BarChart3 size={27} />
           <span>
-            <b>Learn with context</b>
+            <b>Market Updates</b>
             <small>Illustrative sample values · not live data</small>
           </span>
         </div>

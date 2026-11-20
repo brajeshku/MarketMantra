@@ -46,17 +46,17 @@ export const courses = [
 export type Course = (typeof courses)[number];
 
 export const marketIndices = [
-  { name: "NIFTY 50", value: "24,415.25", change: "+0.59%" },
-  { name: "SENSEX", value: "80,220.12", change: "+0.63%" },
-  { name: "BANK NIFTY", value: "52,376.40", change: "+0.62%" },
+  { name: "NIFTY 50", value: "24,415.25", change: "+142.65 (+0.59%)" },
+  { name: "SENSEX", value: "80,220.12", change: "+504.21 (+0.63%)" },
+  { name: "BANK NIFTY", value: "52,376.40", change: "+321.75 (+0.62%)" },
 ] as const;
 
 export const navigationLinks = [
   ["Home", "#home"],
-  ["About us", "#about"],
+  ["About Us", "#about"],
   ["Courses", "#courses"],
-  ["Our approach", "#approach"],
-  ["Stories", "#stories"],
+  ["Why Us", "#approach"],
+  ["Gallery", "#stories"],
   ["Contact", "#enquire"],
 ] as const;
 

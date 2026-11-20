@@ -1,4 +1,5 @@
 import { SectionHeading } from "@/components/section-heading";
+import Image from "next/image";
 
 export function TestimonialsSection() {
   return (
@@ -26,7 +27,7 @@ export function TestimonialsSection() {
         <div className="testimonial-grid">
           <article className="testimonial-card">
             <div className="testimonial-top">
-              <span className="avatar avatar--one">RS</span>
+              <Image className="avatar" src="/student-rohit.jpg" alt="" width={66} height={66} />
               <span>
                 <b>Rohit Sharma</b>
                 <small>Student · Ranchi</small>
@@ -42,7 +43,7 @@ export function TestimonialsSection() {
 
           <article className="testimonial-card">
             <div className="testimonial-top">
-              <span className="avatar avatar--two">SK</span>
+              <Image className="avatar" src="/student-sneha.jpg" alt="" width={66} height={66} />
               <span>
                 <b>Sneha Kumari</b>
                 <small>Student · Ranchi</small>
@@ -58,7 +59,7 @@ export function TestimonialsSection() {
 
           <article className="testimonial-card">
             <div className="testimonial-top">
-              <span className="avatar avatar--three">AV</span>
+              <Image className="avatar" src="/student-amit.jpg" alt="" width={66} height={66} />
               <span>
                 <b>Amit Verma</b>
                 <small>Student · Ranchi</small>

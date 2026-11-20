@@ -6,46 +6,19 @@ import {
   Sparkles,
   UsersRound,
 } from "@/components/icons";
+import Image from "next/image";
 
 export function AboutSection() {
   return (
     <section className="about-section" id="about">
       <div className="page-shell about-layout">
         <div className="about-picture">
-          <div className="classroom-illustration">
-            <div className="classroom-illustration__window">
-              <span />
-              <span />
-              <span />
-            </div>
-            <div className="classroom-illustration__board">
-              <span className="board-logo">
-                M<span>↗</span>
-              </span>
-              <b>MARKET MANTRA</b>
-              <small>Learn with Edge</small>
-              <div className="board-chart">
-                <i />
-                <i />
-                <i />
-                <i />
-                <i />
-                <i />
-                <i />
-              </div>
-            </div>
-            <div className="classroom-illustration__desk">
-              <i />
-              <i />
-              <i />
-            </div>
-            <div className="classroom-illustration__plant">
-              <i />
-              <i />
-              <i />
-              <b />
-            </div>
-          </div>
+          <Image
+            src="/marketmantra-classroom.jpg"
+            alt="Market Mantra classroom prepared for stock market training"
+            fill
+            sizes="(max-width: 860px) 100vw, 32vw"
+          />
           <span className="about-picture__label">
             <span className="pulse-dot" /> A place to learn and grow
           </span>

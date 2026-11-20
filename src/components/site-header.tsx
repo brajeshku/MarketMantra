@@ -18,10 +18,11 @@ export function SiteHeader() {
           aria-label="Market Mantra WealthOrbit home"
         >
           <Image
-            src="/market-mantra-logo.png"
+            src="/market-mantra-logo-header.svg"
             alt=""
             width={408}
             height={85}
+            unoptimized
             preload
           />
         </a>
@@ -48,7 +49,7 @@ export function SiteHeader() {
             href="#enquire"
             onClick={() => setMenuOpen(false)}
           >
-            Enquire now <ArrowRight size={15} />
+            Enquire Now <ArrowRight size={15} />
           </a>
         </nav>
 
@@ -68,7 +69,7 @@ export function SiteHeader() {
           </a>
           <Button asChild size="sm" className="header-cta">
             <a href="#enquire">
-              Enquire now <ArrowRight size={15} />
+              Enquire Now <ArrowRight size={15} />
             </a>
           </Button>
         </div>
