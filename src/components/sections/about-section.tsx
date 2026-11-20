@@ -7,6 +7,7 @@ import {
   UsersRound,
 } from "@/components/icons";
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 
 export function AboutSection() {
   return (
@@ -14,7 +15,7 @@ export function AboutSection() {
       <div className="page-shell about-layout">
         <div className="about-picture">
           <Image
-            src="/marketmantra-classroom.jpg"
+            src={publicAsset("/marketmantra-classroom.jpg")}
             alt="Market Mantra classroom prepared for stock market training"
             fill
             sizes="(max-width: 860px) 100vw, 32vw"

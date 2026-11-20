@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ArrowRight, ChevronDown, Menu, Phone, X } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { contactDetails, navigationLinks } from "@/data/site-content";
+import { publicAsset } from "@/lib/public-asset";
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ export function SiteHeader() {
           aria-label="Market Mantra WealthOrbit home"
         >
           <Image
-            src="/market-mantra-logo-header.svg"
+            src={publicAsset("/market-mantra-logo-header.svg")}
             alt=""
             width={408}
             height={85}

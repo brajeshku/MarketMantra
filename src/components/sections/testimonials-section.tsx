@@ -1,5 +1,6 @@
 import { SectionHeading } from "@/components/section-heading";
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 
 export function TestimonialsSection() {
   return (
@@ -27,7 +28,7 @@ export function TestimonialsSection() {
         <div className="testimonial-grid">
           <article className="testimonial-card">
             <div className="testimonial-top">
-              <Image className="avatar" src="/student-rohit.jpg" alt="" width={66} height={66} />
+              <Image className="avatar" src={publicAsset("/student-rohit.jpg")} alt="" width={66} height={66} />
               <span>
                 <b>Rohit Sharma</b>
                 <small>Student · Ranchi</small>
@@ -43,7 +44,7 @@ export function TestimonialsSection() {
 
           <article className="testimonial-card">
             <div className="testimonial-top">
-              <Image className="avatar" src="/student-sneha.jpg" alt="" width={66} height={66} />
+              <Image className="avatar" src={publicAsset("/student-sneha.jpg")} alt="" width={66} height={66} />
               <span>
                 <b>Sneha Kumari</b>
                 <small>Student · Ranchi</small>
@@ -59,7 +60,7 @@ export function TestimonialsSection() {
 
           <article className="testimonial-card">
             <div className="testimonial-top">
-              <Image className="avatar" src="/student-amit.jpg" alt="" width={66} height={66} />
+              <Image className="avatar" src={publicAsset("/student-amit.jpg")} alt="" width={66} height={66} />
               <span>
                 <b>Amit Verma</b>
                 <small>Student · Ranchi</small>

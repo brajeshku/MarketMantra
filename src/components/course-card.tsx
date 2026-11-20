@@ -2,6 +2,7 @@ import { ArrowRight, Clock3 } from "@/components/icons";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import type { Course } from "@/data/site-content";
+import { publicAsset } from "@/lib/public-asset";
 
 const courseImages: Record<string, string> = {
   "01": "/course-fundamentals.jpg",
@@ -14,7 +15,7 @@ function CourseArtwork({ course }: { course: Course }) {
     <div className="course-art" aria-hidden="true">
       <div className="course-art__photo">
         <Image
-          src={courseImages[course.number]}
+          src={publicAsset(courseImages[course.number])}
           alt=""
           fill
           sizes="(max-width: 580px) 42vw, (max-width: 860px) 38vw, 14vw"

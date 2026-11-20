@@ -7,6 +7,7 @@ import {
 } from "@/components/icons";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { publicAsset } from "@/lib/public-asset";
 
 export function HeroSection() {
   return (
@@ -14,7 +15,7 @@ export function HeroSection() {
       <div className="hero-media" aria-hidden="true">
         <Image
           className="hero__photo"
-          src="/market-mantra-hero-final.jpg"
+          src={publicAsset("/market-mantra-hero-final.jpg")}
           alt=""
           fill
           priority

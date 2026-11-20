@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { publicAsset } from "@/lib/public-asset";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: publicAsset("/favicon.svg"),
   },
 };
 

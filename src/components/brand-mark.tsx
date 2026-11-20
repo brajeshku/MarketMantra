@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { publicAsset } from "@/lib/public-asset";
 
 export function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
     <a className={cn("brand", compact && "brand--compact")} href="#home" aria-label="Market Mantra WealthOrbit home">
       <Image
         className="brand__image"
-        src="/market-mantra-logo.svg"
+        src={publicAsset("/market-mantra-logo.svg")}
         alt=""
         width={408}
         height={85}

@@ -9,6 +9,7 @@ import {
 } from "@/components/icons";
 import { SectionHeading } from "@/components/section-heading";
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 
 export function ApproachSection() {
   return (
@@ -78,7 +79,7 @@ export function ApproachSection() {
         <div className="practice-panel">
           <div className="practice-panel__image">
             <Image
-              src="/marketmantra-practice-laptop.jpg"
+              src={publicAsset("/marketmantra-practice-laptop.jpg")}
               alt="Laptop displaying market charts during a practical learning session"
               fill
               sizes="(max-width: 860px) 100vw, 50vw"
